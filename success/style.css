@@ -1,0 +1,102 @@
+/* The designs were created to the following widths: */
+/* - Mobile: 375px - Desktop: 1440px */
+/* - Font size (paragraph): 16px */
+/* - font-Family: [Roboto](https://fonts.google.com/specimen/Roboto) */
+/* - Weights: 400, 700 */
+/* ## Colors */
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@900&family=Inter:wght@700&family=Mulish&family=Outfit:wght@700&family=Red+Hat+Display:wght@500;900&family=Roboto:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+
+
+
+:root {
+    
+    --Tomato: hsl(4, 100%, 67%);
+    
+    --DarkSlateGrey: hsl(234, 29%, 20%);
+    
+    --CharcoalGrey: hsl(235, 18%, 26%);
+    
+    --Grey: hsl(231, 7%, 60%);
+    
+    --White: hsl(0, 0%, 100%);
+    
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    background-color: var(--CharcoalGrey);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+main {
+    background-color: var(--White);
+    border-radius: 1rem;
+}
+
+.container {
+    width: 330px;
+    margin: 2rem;
+}
+.box>h1 {
+    margin: 1rem auto;
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+    color: var(--DarkSlateGrey);
+}
+.box>p {
+    margin-bottom: 2rem;
+    font-size: 16px;
+    color: var(--Grey);
+}
+.box>p>span {
+    color: var(--DarkSlateGrey);
+    
+}
+.container>button {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    width: inherit;
+    height: 3rem;
+    border: none;
+    border-radius: 6px;
+    color: var(--White);
+    background: var(--DarkSlateGrey);
+}
+
+.container>button:hover {
+    background-image:     linear-gradient(
+        to left, 
+        red, hsl(4, 100%, 67%)
+      );;
+}
+
+@media screen and (max-width: 480px) {
+    body {
+      background: var(--White);
+    }
+    .container {
+        height: 100vh;
+        display: flex;  
+        align-items: center;
+        flex-wrap: wrap;
+    }   
+
+    button{
+        margin-bottom: 4rem;
+       align-self: flex-end;
+    }
+  }
+
